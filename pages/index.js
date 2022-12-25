@@ -3,21 +3,23 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillLinkedin,
   AiFillYoutube,
-  AiFillFacebook,
   AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/image";
-import mod from "../public/mod.png";
+import myPhoto from "../public/myPhoto.jpg";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+
 import { useState } from "react";
+
+import draw from "../public/draw.png"
+import imageGallery from "../public/imageGallery.png";
+
+import CookingBlog from "../public/cooking_blog.png";
+import CookingBlog2 from "../public/cooking_blog2.png";
+import gradP1 from "../public/gradP1.png";
+import gradP2 from "../public/gradP2.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -46,7 +48,7 @@ export default function Home() {
               <li>
                 <a
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500  text-white px-4 py-2 rounded-md ml-8 "
-                  href="https://www.linkedin.com/in/mohamed-medhat-337b811b8"
+                  href="https://docs.google.com/document/d/1qlkNLOYD-U0hpD2StlbPxN5FITNqNJkj/edit?usp=sharing&ouid=117336269782074297516&rtpof=true&sd=true"
                 >
                   Resume
                 </a>
@@ -62,9 +64,9 @@ export default function Home() {
               FullStack Developer.
             </h3>
             <p className=" text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto  dark:text-gray-400">
-              Full Stack developer W. MERN Stack and Grad year collage student
+              Full Stack developer using MERN Stack, Grad year collage student
               in the faculty of engineering at tanta university, specialized in
-              computers and automatic control.
+              computer science and automatic control.
             </p>
           </div>
 
@@ -94,86 +96,106 @@ export default function Home() {
           </div>
 
           <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 ">
-            <Image src={mod} alt="3d image" layout="fill" objectFit="cover" />
+            <Image
+              src={myPhoto}
+              alt="my photo"
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         </section>
 
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Services I Offer</h3>
+            <h3 className="text-3xl py-1 dark:text-white">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              I build full stack web applications for businesses using
-              <span className=" text-teal-500 "> Node js and React js </span>
-              And I can also build collage projects for cs students that are
-              related to web development. I offer wide range of services
-              including programming and teaching.
+              I have started my learning journey since the second year in
+              collage. so it has been 2 years now. I have learnt through online
+              courses and made tons of small to medium sized projects. I
+              understand that I am at the beginning of my journey and there is A
+              LOT more to learn and I am willing to put the time and effort.
             </p>
           </div>
 
           <div className=" lg:flex gap-10 dark:text-white">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700">
               <Image src={design} width={100} height={100} alt="design" />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
-              </h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">UI/UX</h3>
               <p className="py-2 ">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                I have experience in building user interfaces that provide good
+                user experience.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1 dark:text-gray-300">
-                Photo Shop
-              </p>
+              <h4 className="py-4 text-teal-600  dark:text-teal-200">
+                Design tools I use
+              </h4>
               <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
               <p className="text-gray-800 py-1 dark:text-gray-300">Canva</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700">
               <Image src={code} width={100} height={100} alt="design" />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                High Quality CODE
-              </h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">Coding</h3>
               <p className="py-2 ">
-                Creating high quality code following best practices to make high
-                quality and performance applications that satisfy your bushiness
-                needs .
+                2 years of experience building web applications for my collage
+                that are bushiness oriented. I always search and learn how the
+                bushiness works before I start implementing.
               </p>
-              <h4 className="py-4 text-teal-600">Technologies That I Use</h4>
+              <h4 className="py-4 text-teal-600  dark:text-teal-200">
+                Frameworks and tools
+              </h4>
               <p className="text-gray-800 py-1 dark:text-gray-300">
-                React JS || Html & JS
-              </p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">
-                Node JS || GO lang
-              </p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">
-                Mongo DB || MySQL
+                React JS || Html & JS || python
               </p>
               <p className="text-gray-800 py-1 dark:text-gray-300">
                 CSS || SCSS || Bootstrap || TailwindCSS{" "}
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                Node JS || GO lang || Flask
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                Mongo DB || MySQL
               </p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700">
               <Image src={consulting} width={100} height={100} alt="design" />
-              <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">Projects</h3>
               <p className="py-2 ">
-                1 year of experience in building applications for bushiness. We
-                will talk together and discuss your bushiness needs and provide
-                the suitable solution.
+                Projects that I made during the past 2 years of learning
               </p>
-              <h4 className="py-4 text-teal-600">
-                Fields That I worked With Before
+              <h4 className="py-4 text-teal-600  dark:text-teal-200">
+                Things that I built before
               </h4>
-              <p className="text-gray-800 py-1 dark:text-gray-300">
-                Online Shop
+              <p className="text-teal-900 py-1 dark:text-teal-400">
+                <a href="https://github.com/mohamed20medhat/Flask_Projects">
+                  Flask&MySQL : health insurance company + Blog
+                </a>
               </p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">
-                Blogs and Blogging
+              <p className="text-teal-900 py-1 dark:text-teal-400">
+                <a href="https://github.com/mohamed20medhat/mybrary">
+                  Node JS : Library
+                </a>
               </p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">
-                Shops system && pharmacies
+              <p className="text-teal-900 py-1 dark:text-teal-400">
+                <a href="https://github.com/mohamed20medhat/ecommerce_SE">
+                  Node JS : ECommerce
+                </a>
               </p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Hospitals</p>
+              <p className="text-teal-900 py-1 dark:text-teal-400">
+                <a href="https://github.com/mohamed20medhat/influencerBlog">
+                  Node JS : Cooking Blog
+                </a>
+              </p>
+              <p className="text-teal-900 py-1 dark:text-teal-400">
+                <a href="https://github.com/mohamed20medhat/todo_App_React">
+                  React js: TO DO app
+                </a>
+              </p>
+              <p className="text-teal-900 py-1 dark:text-teal-400">
+                <a href="https://github.com/mohamed20medhat/react-image-gallary">
+                  React JS : Image Gallery
+                </a>
+              </p>
             </div>
           </div>
         </section>
@@ -182,17 +204,17 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-200">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              I build full stack web applications for businesses using
+              I can build full stack web applications using
               <span className=" text-teal-500 "> Node js and React js </span>
-              And I can also build collage projects for cs students that are
-              related to web development
+              Also I have experience in teaching how to build full stack
+              projects to collage students.
             </p>
           </div>
 
           <div className=" flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className=" basis-1/3 flex-1">
               <Image
-                src={web1}
+                src={CookingBlog}
                 alt="web"
                 className=" rounded-lg object-cover"
                 width={"100%"}
@@ -202,7 +224,7 @@ export default function Home() {
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
-                src={web2}
+                src={CookingBlog2}
                 alt="web"
                 className=" rounded-lg object-cover"
                 width={"100%"}
@@ -212,7 +234,7 @@ export default function Home() {
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
-                src={web3}
+                src={gradP1}
                 alt="web"
                 className=" rounded-lg object-cover"
                 width={"100%"}
@@ -222,7 +244,7 @@ export default function Home() {
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
-                src={web4}
+                src={gradP2}
                 alt="web"
                 className=" rounded-lg object-cover"
                 width={"100%"}
@@ -232,7 +254,7 @@ export default function Home() {
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
-                src={web5}
+                src={imageGallery}
                 alt="web"
                 className=" rounded-lg object-cover"
                 width={"100%"}
@@ -242,7 +264,7 @@ export default function Home() {
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
-                src={web6}
+                src={draw}
                 alt="web"
                 className=" rounded-lg object-cover"
                 width={"100%"}
